@@ -16,6 +16,17 @@
 	padding-top:40px;
 }
 
+.marge3 {
+	padding-bottom:10px;
+}
+
+.centre {
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 @font-face {
 	font-family: 'Quicksand';
 	src: url('Quicksand-Regular.otf');
