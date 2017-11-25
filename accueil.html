@@ -1,33 +1,91 @@
-<!DOCTYPE type>
-<html>	
-	<head>
-		<title> La bonne cuisine </title>
-		<meta charset="utf-8"></meta>
-		<link rel="stylesheet" href="style2.css" />
-	</head>
+<!DOCTYPE html>
+<html>
+		<title>La bonne cuisine</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="TEST.css">
+		<style>
+		.mySlides {display:none}
+		.w3-left, .w3-right, .w3-badge {cursor:pointer}
+		.w3-badge {height:13px;width:13px;padding:0}
+		</style>
 	<body>
-		<h1> <center>Faire plaisir</center> </h1>
-		<div id="menu" >
-			<ul id="onglets">
-				<li class="active"><a href="accueil.html"> Accueil </a></li>
-				<li><a href="Forum.html"> Forum </a></li>
-				<li><a href="Tuto crêpes 4.html"> Les crêpes </a></li>
-				<li><a href="chocolat.html"> Le chocolat </a></li>
-				<li><a href="Connexion.html"> Se connecter ou s'inscrire </a></li>
-				<li><a href="A propos.html"> A propos de nous </a></li>
-			</ul>
+		<div class="background2">
+		<a href="accueil.html" class="mainLogo"></a>
+			<h1> Faire plaisir </h1>
+			<div id="menu">
+				<ul id="onglets">
+					<li class="active" ><a href="accueil.html"> Accueil </a></li>
+					<li><a href="Forum.html"> Forum </a></li>
+					<li><a href="Tuto crêpes 4.html"> Les crêpes </a></li>
+					<li><a href="chocolat.html"> Le chocolat </a></li>
+					<li><a href="Connexion.html"> Se connecter ou s'inscrire </a></li>
+					<li><a href="A propos.html"> A propos de nous </a></li>
+				</ul>
+			</div>
 		</div>
-		<div class="marge">
-			<center><img src="https://www.talenteo.fr/wp-content/uploads/2015/07/Groupe-3.jpg" width="600" ></center>
+		<div class="padding">
+			<div class="w3-content w3-display-container" style="max-width:800px">
+				<figure>
+					<img class="mySlides" src="Groupe.jpg" style="width:100%">
+					<figcaption>Bonjour, vous pouvez naviguer pour</br> voir nos différentes recettes</br> au top cette semaine</figcaption>
+				</figure>
+				<figure>
+					<img class="mySlides" src="Hamburger.jpg" style="width:100%">
+					<figcaption>Bonjour, vous pouvez naviguer pour</br> voir nos différentes recettes</br> au top cette semaine</figcaption>
+				</figure>
+				<figure>
+					<img class="mySlides" src="pizza.jpeg" style="width:100%">
+					<figcaption>Bonjour, vous pouvez naviguer pour</br> voir nos différentes recettes</br> au top cette semaine</figcaption>
+				</figure>
+				<div class="w3-center w3-container w3-section w3-large w3-text-indigo w3-display-bottommiddle" style="width:100%">
+				<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+				<div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+			  </div>
+			</div>
+			<div class="quick">
+					<center>Des apprentis cuisiniers comme vous !</center>
+			</div>
+			<div style="font-size:1.2em;">
+				<p> Si vous êtes sur notre site, c'est parce que vous voulez trouver des recettes basiques et pourtant efficaces,j'ai une bonne nouvelle pour vous, vous êtes au bon endroit !</p>
+				<p> En vous dirigeant à travers les différents onglets de notre site, vous pourrez voir que vous avez à ce jour 2 recettes faites</p>
+				<p> Cependant, le catalogue sera amélioré sous peu, en attendant, faites-vous plaisir et surtout, cuisinez bien !</p>
+			</div>
+			<img class="cote" src="http://aufilduthym.fr/wp-content/uploads/2016/01/pate-crepe-croustillante.jpg" width="350" />
+			<img class="cote" src="https://wwwdotgretagarburedotcom.files.wordpress.com/2013/03/chocolat-fondu-via-chocolat-confiserie-aixlesbains-com.jpg" width="350" />
+			<center><p class="quick"> Des exemples d'aliments à cuisiner grâce à nous</p></center>
 		</div>
-		<div class="quick">
-				<center>Des apprentis cuisiniers comme vous !</center>
-		</div>
-		<p> Si vous êtes sur notre site, c'est parce que vous voulez trouver des recettes basiques et pourtant efficaces,j'ai une bonne nouvelle pour vous, vous êtes au bon endroit !</p>
-		<p> En vous dirigeant à travers les différents onglets de notre site, vous pourrez voir que vous avez à ce jour 2 recettes faites</p>
-		<p> Cependant, le catalogue sera amélioré sous peu, en attendant, faites-vous plaisir et surtout, cuisinez bien !</p>
-		<img class="cote" src="http://aufilduthym.fr/wp-content/uploads/2016/01/pate-crepe-croustillante.jpg" width="350" />
-		<img class="cote" src="https://wwwdotgretagarburedotcom.files.wordpress.com/2013/03/chocolat-fondu-via-chocolat-confiserie-aixlesbains-com.jpg" width="350" />
-		<center><p class="quick"> Des exemples d'aliments à cuisiner grâce à nous</p></center>
-	</body>
-</html>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html> 
