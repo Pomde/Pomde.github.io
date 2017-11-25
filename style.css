@@ -18,10 +18,20 @@
 
 .marge3 {
 	padding-bottom:10px;
+	text-align:center;
 }
 
 .marge4 {
 	padding-top:25px;
+}
+
+.marge5 {
+	padding-left:150px;
+	padding-right:150px;
+}
+
+.margin {
+	padding-bottom:5px;
 }
 
 .centre {
@@ -51,6 +61,11 @@
 	padding-left:100px;
 }
 
+.background4 {
+	padding-right:200px;
+	padding-left:200px;
+	padding-top: 20px;
+}
 .mainLogo{
 	display:block;
 	float:left;
@@ -68,9 +83,40 @@
 	width: 300;
 }
 
+.bordure {
+	border: solid 2px #000000 ;
+}
+
+.tableau {
+	float:right;
+	background-color:white;
+	font-family: 'Quicksand', Verdana;
+}
+
+.mar {
+	margin-top:-6px;
+}
+
+.larg {
+	float:right;
+	padding-top:-500px;
+}
+
+.police {
+	font-family: 'Quicksand', Verdana;
+}
+
+.taille {
+	font-size:1.3em;
+}
+
 h1 {
 	font-family: 'Quicksand', Verdana;
 	padding-top:20px;
+}
+
+h2 {
+	font-family: 'Quicksand', Verdana;
 }
 
 p

@@ -17,8 +17,9 @@ figcaption {
 .quick {
 	font-family: 'lato', Verdana;
 }
-.cote {
-	padding-left:350px;
+.centre {
+	margin-top:4px;
+	border: solid 2px #000000 ;
 }
 
 .background2 {
